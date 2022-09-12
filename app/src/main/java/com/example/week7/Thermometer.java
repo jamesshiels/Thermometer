@@ -12,7 +12,7 @@ import android.view.View;
 
 import android.view.View;
 
-public class therm extends View {
+public class Thermometer extends View {
     private float outerCircleRadius, outerRectRadius;
     private Paint outerPaint;
     private float middleCircleRadius, middleRectRadius;
@@ -37,17 +37,17 @@ public class therm extends View {
     private Rect rect = new Rect();
 
 
-    public therm(Context context) {
+    public Thermometer(Context context) {
         super(context);
         init(context, null);
     }
 
-    public therm(Context context, AttributeSet attrs) {
+    public Thermometer(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context,attrs);
     }
 
-    public therm(Context context, AttributeSet attrs, int defStyleAttr) {
+    public Thermometer(Context context, AttributeSet attrs, int defStyleAttr) {
         super (context, attrs, defStyleAttr);
         init(context, attrs);
     }

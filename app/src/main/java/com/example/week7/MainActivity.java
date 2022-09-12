@@ -7,10 +7,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.support.v4.app.*;
 import android.widget.Toast;
-
-import android.os.Bundle;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -19,14 +16,14 @@ import java.util.TimerTask;
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
     private SensorManager sensorManager;
-    private therm thermometer;
+    private Thermometer thermometer;
     private float temperature;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        thermometer = (therm) findViewById(R.id.thermometer);
+        thermometer = (Thermometer) findViewById(R.id.thermometer);
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
     }
 
